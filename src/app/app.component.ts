@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'letslearn';
+  title = 'Letslearn';
+  points = 1;
+
+  plus1() {
+    this.points++;
+  }
+
+  reset() {
+    this.points = 0;
+  }
 }
